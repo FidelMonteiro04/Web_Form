@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebForm</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 ;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px;
+            background-color: palegreen;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        form input {
+            outline: unset;
+            padding: 20px;
+            min-width: 300px;
+            border: 1px solid palegreen;
+            border-radius: 20px;
+        }
+        form input:focus {
+            background-color: antiquewhite;
+        }
+        form button[type ="submit"] {
+            outline: unset;
+            padding: 20px;
+            min-width: 300px;
+            border: 1px solid palegreen;
+            border-radius: 20px;
+            background-color: palegreen;
+            cursor: pointer;
+        }
+        form label{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Form</h1>
+    </header>
+    <section>
+        <form method="post">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" placeholder ="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder ="email" id="email">
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button> 
+            </div>
+            
+        </form>
+    </section>
+    
+</body>
+</html>
